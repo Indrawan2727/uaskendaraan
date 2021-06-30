@@ -34,6 +34,14 @@
                 <th class="text-center">AKSI</th>
             </tr>
             </thead>
+            <button onclick="tampilpdf()" type="button" class="tn btn-success btn-md mb-3 right  ">
+                       Print 	
+                </button>
+            <script>
+            function tampilpdf(){
+                window.print();
+            }
+            </script>
 
             <tbody>
             <?php $no = 1; ?>
