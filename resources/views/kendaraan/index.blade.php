@@ -56,6 +56,7 @@
         {{ $kendaraans->links() }}
 
     </div>
+    <div class="container mt-4">
     <button onclick="tampilpdf()" type="button" class="tn btn-success btn-md mb-3 right  ">
                        Print 	
                 </button>
@@ -65,7 +66,7 @@
             }
             </script>
 
-    
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
