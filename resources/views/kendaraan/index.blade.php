@@ -12,15 +12,6 @@
     <div class="container mt-4">
 
     <a href="{{ route('kendaraan.create') }}" class="btn btn-md btn-success mb-3">TAMBAH KENDARAAN</a>
-    <button onclick="tampilpdf()" type="button" class="tn btn-success btn-md mb-3 right  ">
-                       Print 	
-                </button>
-            <script>
-            function tampilpdf(){
-                window.print();
-            }
-            </script>
-
     <a href="{{ route('logout') }}" class="btn btn-success btn-md mb-3 ">Logout</a>
 
         <table class="table table-bordered">
@@ -34,15 +25,7 @@
                 <th class="text-center">AKSI</th>
             </tr>
             </thead>
-            <button onclick="tampilpdf()" type="button" class="tn btn-success btn-md mb-3 right  ">
-                       Print 	
-                </button>
-            <script>
-            function tampilpdf(){
-                window.print();
-            }
-            </script>
-
+           
             <tbody>
             <?php $no = 1; ?>
             @forelse ($kendaraans as $i)
@@ -73,6 +56,15 @@
         {{ $kendaraans->links() }}
 
     </div>
+    <button onclick="tampilpdf()" type="button" class="tn btn-success btn-md mb-3 right  ">
+                       Print 	
+                </button>
+            <script>
+            function tampilpdf(){
+                window.print();
+            }
+            </script>
+
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
